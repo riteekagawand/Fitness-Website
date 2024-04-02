@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lab Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Reset CSS */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic Styling */
+        body {
+            font-family: 'Popins', sans-serif;
+            background-color: #C8C4DF;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .about {
+            max-width: 600px;
+        }
+
+        .image {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: 'Popins', sans-serif;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <div class="about">
+                <p> Clearly articulate your mission and what sets our fitness brand apart. This could be our commitment to helping people lead healthier lives, our dedication to provide personalized training programs, or your focus on a specific fitness niche like bodybuilding, yoga, or functional training.
+
+                </p>
+                <p>Follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:24px"></i>
+
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" style="font-size:24px"></i>
+                    </a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-f" style="font-size:24px"></i>
+                </a>
+            </div>
+            </div>
+            <div class="image">
+                <img src="p.jpg" alt="FITNESS EXERCISE">
+            </div>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; FITNESS. All rights reserved.</p><br>
+        <p id="demo"></p><br>
+        <p id="demo1"></p><br>
+        <p id="demo2"></p><br>
+        <p id="demo3"></p>
+    </footer>
+
+    <script>
+        const name='{"name":"Archie Ninave","design":"Has created Home and Login Page"}';
+        const name1='{"name":"Aviraj Awasthi","design":"Has created Animation"}';
+        const name2='{"name":"Sharvil Pathare","design":"Has created Exercise Page"}';
+        const name3='{"name":"Yadnik Thalkar","design":"Has created About us Page"}';
+        const obj = JSON.parse(name);
+        const obj1 = JSON.parse(name1);
+        const obj2 = JSON.parse(name2);
+        const obj3 = JSON.parse(name3);
+        document.getElementById("demo").innerHTML = obj.name + ": " + obj.design;
+        document.getElementById("demo1").innerHTML = obj1.name + ": " + obj1.design;
+        document.getElementById("demo2").innerHTML = obj2.name + ": " + obj2.design;
+        document.getElementById("demo3").innerHTML = obj3.name + ": " + obj3.design;
+    </script>
+</body>
+</html>
+
+ 
